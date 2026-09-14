@@ -1,0 +1,13 @@
+﻿services:
+  - type: web
+    name: medicine-vision-chat
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DOUBAO_API_KEY
+        sync: false
+      - key: DOUBAO_ENDPOINT
+        sync: false
+      - key: DOUBAO_MODEL
+        value: doubao-seed-1-6-vision-250815
